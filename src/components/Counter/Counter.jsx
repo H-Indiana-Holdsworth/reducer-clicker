@@ -45,8 +45,6 @@ function countReducer(count, { type }) {
 export default function Counter() {
   const [count, dispatch] = useReducer(countReducer, initialState)
 
-  useEffect(() => {}, [count])
-
   const increment = () => {
     dispatch({
       type: 'increment',
